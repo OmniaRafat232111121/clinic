@@ -4,6 +4,7 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import { Offline } from 'react-detect-offline';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import Contact from '../Contact/Contact';
 
 
 const Layout = ({userData,setuserData}) => {
@@ -19,8 +20,9 @@ const Layout = ({userData,setuserData}) => {
      <Navbar userData={userData} logOut={logOut}/>
      <Outlet></Outlet>
     <Offline><div className='network'>You are offline <i className='fas fa-wifi'></i></div></Offline>
+    <Contact/>
     <Footer/>      
-
+    
     </div>
   )
 }

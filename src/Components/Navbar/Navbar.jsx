@@ -7,7 +7,7 @@ const Navbar = ({userData,logOut}) => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="text-white font-bold text-xl">
+            <Link to="/" className=" font-bold text-xl">
               <img src={logo} className='w-10 h-10'/>
             </Link>
           </div>
@@ -46,12 +46,7 @@ const Navbar = ({userData,logOut}) => {
             >
               Services
             </Link>
-            <Link
-              to="/contact"
-              className="text-white hover:bg-gray-700 px-3 py-2 rounded-md"
-            >
-              Contact
-            </Link>
+           
 
             {userData == null ? <>
                 <Link
